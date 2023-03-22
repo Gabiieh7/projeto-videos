@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    width: 90rem;
+    height: 42rem;
+    border-radius: 1rem;
+    background-color: #F7F7F7;
+}
+
+.container .video-principal {
+    display: none;
+    margin: 3.8rem 0 1.9rem 3.5rem;
+}
+
+.container .video-principal.selecionado {
+    display: block;
+}
+
+.container .video-principal,
+.container .video-principal video{
+    width: 50rem;
+}
+.container .video-principal video img{
+    width: 100%;
+    height: 100%;
+}
+
+.container .video-principal .titulo-principal {
+    font-size: 1.8rem;
+    margin: 1rem 0 0.7rem 0;
+}
+
+.container .video-principal .descricao {
+    margin-top: 0.7rem;
+    height: 8.5rem;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0;
+    background-color: #c4c4c4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3a3939;
+    border-radius: 1rem;
+}
+
+.container .video-principal .descricao .texto {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .sugestoes .lista-videos-secundarios {
+    margin: 3.8rem 3.5rem 0 1.7rem;
+}
+
+.container .sugestoes .lista-videos-secundarios .propaganda {
+    margin-bottom: 2rem;
+}
+
+.container .sugestoes .lista-videos-secundarios .video-secundario {
+    margin-bottom: 1.6rem;
+}
+
+.container .sugestoes .lista-videos-secundarios .video-secundario.nao-selecionado {
+    display: none;
+}
+
+.container .sugestoes .lista-videos-secundarios .propaganda {
+    width: 27rem;
+    height: 5.6rem;
+}
+
+.container .sugestoes .lista-videos-secundarios .propaganda .imagem-propaganda {
+    width: 100%;
+    height: 100%;
+}
+
+.container .sugestoes .lista-videos-secundarios .video-secundario .video-pequeno {
+    height: 7.2rem;
+    width: 13rem;
+}
+
+.container .sugestoes .lista-videos-secundarios .video-secundario {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container .sugestoes .lista-videos-secundarios .video-secundario .div-info .titulo-secundario,
+.container .video-principal .vizualizacao {
+    font-size: 1.4rem;
+}
+
+.container .sugestoes .lista-videos-secundarios .video-secundario .div-info .info {
+    font-size: 1.1rem;
+}
